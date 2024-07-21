@@ -28,7 +28,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: sshubhamk1/sshubhamk1.github.io
-        token: ${{ secrets.GH_TOKEN }}
+        token: ${{ GH_TOKEN.GH_TOKEN }}
         ref: master
         path: repo2
 
