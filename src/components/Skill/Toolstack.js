@@ -4,9 +4,10 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiSlack,
-  SiVercel,
   SiMacos,
+  SiNginx,
 } from "react-icons/si";
+import { FaGitAlt, FaDocker } from "react-icons/fa";
 
 function Toolstack() {
   return (
@@ -24,7 +25,13 @@ function Toolstack() {
         <SiSlack />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <FaDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaGitAlt />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNginx />
       </Col>
     </Row>
   );
