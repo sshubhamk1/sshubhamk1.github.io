@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.22032fd2.chunk.css",
-    "main.js": "/static/js/main.95306934.chunk.js",
-    "main.js.map": "/static/js/main.95306934.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.59e62035.js",
-    "runtime-main.js.map": "/static/js/runtime-main.59e62035.js.map",
-    "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.f026b8ff.chunk.js": "/static/js/2.f026b8ff.chunk.js",
-    "static/js/2.f026b8ff.chunk.js.map": "/static/js/2.f026b8ff.chunk.js.map",
-    "static/js/3.a8afc644.chunk.js": "/static/js/3.a8afc644.chunk.js",
-    "static/js/3.a8afc644.chunk.js.map": "/static/js/3.a8afc644.chunk.js.map",
+    "main.css": "/static/css/main.06c7804c.css",
+    "main.js": "/static/js/main.b2080ddc.js",
+    "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Shubham_Kumar-Resume_2024.pdf": "/static/media/Shubham_Kumar-Resume_2024.f02f7d3df51892251906.pdf",
+    "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/process_monitor.png": "/static/media/process_monitor.aedb563a583d11b1770f.png",
+    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/logo.png": "/static/media/logo.b5f14421004837ef5873.png",
+    "static/media/avatar.svg": "/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
+    "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
-    "static/css/2.20aa2d7b.chunk.css.map": "/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.22032fd2.chunk.css.map": "/static/css/main.22032fd2.chunk.css.map",
-    "static/js/2.f026b8ff.chunk.js.LICENSE.txt": "/static/js/2.f026b8ff.chunk.js.LICENSE.txt",
-    "static/media/Profile.css": "/static/media/nitk.b10bb871.jpg",
-    "static/media/shubh.f5ce686a.jpg": "/static/media/shubh.f5ce686a.jpg"
+    "main.06c7804c.css.map": "/static/css/main.06c7804c.css.map",
+    "main.b2080ddc.js.map": "/static/js/main.b2080ddc.js.map",
+    "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.59e62035.js",
-    "static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.f026b8ff.chunk.js",
-    "static/css/main.22032fd2.chunk.css",
-    "static/js/main.95306934.chunk.js"
+    "static/css/main.06c7804c.css",
+    "static/js/main.b2080ddc.js"
   ]
 }
