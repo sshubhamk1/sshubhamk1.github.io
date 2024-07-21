@@ -32,6 +32,11 @@ jobs:
         ref: master
         path: repo2
 
+    - name: Removing all files from sshubhamk1.github.io
+      run: |
+        cd repo2
+        git rm -r *
+
     - name: Copy build files to repo2
       run: cp -r build/* repo2/
 
