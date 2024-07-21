@@ -40,6 +40,10 @@ jobs:
         cd repo2
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
-        git add .
-        git commit -m "Deploy from shubhPortfolio"
-        git push origin master
+        if [ -n "$(git status --porcelain)" ]; then
+          git add .
+          git commit -m "Deploy from repo1"
+          git push origin master
+        else
+          echo "No changes to commit"
+        fi

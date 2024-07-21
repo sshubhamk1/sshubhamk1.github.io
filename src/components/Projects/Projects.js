@@ -8,7 +8,8 @@ import Particle from "../Particle";
 // import chatify from "../../Assets/Projects/chatify.png";
 // import suicide from "../../Assets/Projects/suicide.png";
 // import bitsOfCode from "../../Assets/Projects/blog.png";
-import procmon from "../../Assets/Projects/process_monitor.png";
+import procmon from "../../Assets/Projects/procmon.jpg";
+import sysmon from "../../Assets/Projects/sysmon.jpg";
 
 function Projects() {
   return (
@@ -28,6 +29,16 @@ function Projects() {
               isBlog={false}
               title="Process Monitor"
               description="An application launcher to set up and start 5g server automatically."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://www.radisys.com"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={sysmon}
+              isBlog={false}
+              title="System Monitor"
+              description="An application to monitor the server health and alarms, logs and metrics to EMS."
               // ghLink="https://github.com/soumyajit4419/Chatify"
               demoLink="https://www.radisys.com"
             />
