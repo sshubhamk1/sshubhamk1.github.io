@@ -1,0 +1,45 @@
+name: Deploy to Repo2
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout shubhPortfolio
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # Use the Node.js version your project requires
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build
+
+    - name: Checkout sshubhamk1.github.io
+      uses: actions/checkout@v2
+      with:
+        repository: sshubhamk1/sshubhamk1.github.io
+        token: ${{ secrets.GH_TOKEN }}
+        ref: master
+        path: repo2
+
+    - name: Copy build files to repo2
+      run: cp -r build/* repo2/
+
+    - name: Commit and push changes to repo2
+      run: |
+        cd repo2
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add .
+        git commit -m "Deploy from shubhPortfolio"
+        git push origin master
