@@ -2,14 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-// import leaf from "../../Assets/Projects/leaf.png";
-// import emotion from "../../Assets/Projects/emotion.png";
-// import editor from "../../Assets/Projects/codeEditor.png";
-// import chatify from "../../Assets/Projects/chatify.png";
-// import suicide from "../../Assets/Projects/suicide.png";
-// import bitsOfCode from "../../Assets/Projects/blog.png";
 import procmon from "../../Assets/Projects/procmon.jpg";
 import sysmon from "../../Assets/Projects/sysmon.jpg";
+import tuxbuild from "../../Assets/Projects/tuxbuild.png";
+import custom_iso from "../../Assets/Projects/custom_iso.png";
+import iot_malware from "../../Assets/Projects/iot_malware.png";
 
 function Projects() {
   return (
@@ -27,23 +24,57 @@ function Projects() {
             <ProjectCard
               imgPath={procmon}
               isBlog={false}
+              isRestricted={true}
               title="Process Monitor"
-              description="An application launcher to set up and start 5g server automatically."
+              description="Process Monitor is an application launcher designed to automatically set up and start a 5G server. The 5G server comprises server-level applications with specific attributes and environments. If any of these applications go down, the server does not function as expected, requiring system changes before bringing it up again. The Process Monitor app ensures that all applications listed in the service_config.json file are brought up and can restart the server if any application fails. Additionally, it sends the metrics of running processes to EMS to keep the entire system synchronized."
               // ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://www.radisys.com"
+              orgLink="https://www.radisys.com"
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={sysmon}
               isBlog={false}
+              isRestricted={true}
               title="System Monitor"
-              description="An application to monitor the server health and alarms, logs and metrics to EMS."
+              description="System Monitor is an application that monitors a server's health by tracking CPU, memory, disk, and other resource usage, sending metrics to EMS. It detects sudden surges in resource utilization, generates alarms, and forwards them to EMS. Additionally, it transfers non-active log files to a remote server to prevent the server from running out of space."
               // ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://www.radisys.com"
+              orgLink="https://www.radisys.com"
             />
           </Col>
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tuxbuild}
+              isBlog={false}
+              isRestricted={true}
+              title="Tuxbuild"
+              description="Tuxbuild is a build tool application designed to build all 5G applications and create releases. It sets up a common isolated environment with the necessary libraries not officially supported by the operating system and applies patches to these libraries based on usage. Tuxbuild then builds all applications based on their dependencies and creates release files suitable for server deployment."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              orgLink="https://www.radisys.com"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={custom_iso}
+              isBlog={false}
+              isRestricted={true}
+              title="Custom RHEL ISO"
+              description="5G server system settings can be time-consuming and may result in inconsistent library versions and settings across servers. To address these issues, a custom RHEL ISO is created. This ISO includes only the necessary libraries for 5G applications and other dependent libraries, along with all custom-built libraries and binaries for 5G servers. This approach enables a plug-and-play server setup and reduces the ISO size by 72% compared to the original."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              orgLink="https://www.radisys.com"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={iot_malware}
+              isBlog={false}
+              isRestricted={false}
+              title="Mitigation of Mirai Malware"
+              description="This research proposes a Behaviour-dependent Resource-based Network-level Mitigation (BRNM) approach for Mirai malware and its variants. This hybrid method monitors IoT behavior through resources like CPU and memory utilization and running processes. It is based on the idea that malware attacks on IoT devices either kill genuine processes, create new processes, reuse existing ones, or attach malicious processes to genuine ones. The approach uses a bot application to monitor IoT device behavior, sending data to a backconnect server where processing occurs, and then updates the authorized user for corrective actions. The BRNM model is implemented in a Docker environment and tested for eight different IoT behaviors before and after malware infection."
+              ghLink="https://github.com/sshubhamk1/Mirai-Solution"
+              orgLink="https://www.radisys.com"
+            />
+          </Col>
           {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
