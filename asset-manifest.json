@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.06c7804c.css",
-    "main.js": "/static/js/main.f4891c2d.js",
+    "main.js": "/static/js/main.a33f9d03.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/tuxbuild.png": "/static/media/tuxbuild.972adfab28f292cc0bdc.png",
@@ -9,6 +9,8 @@
     "static/media/custom_iso.png": "/static/media/custom_iso.bdf156551d5d9e28a150.png",
     "static/media/sysmon.jpg": "/static/media/sysmon.01cabc108d405c0f7154.jpg",
     "static/media/iot_malware.png": "/static/media/iot_malware.3458ef8a263e41b201ad.png",
+    "static/media/ncmproject.png": "/static/media/ncmproject.fe84057f2d8414f24a26.png",
+    "static/media/scaleai.png": "/static/media/scaleai.9060df728796bb664406.png",
     "static/media/Shubham_Kumar-Resume_2024.pdf": "/static/media/Shubham_Kumar-Resume_2024.f02f7d3df51892251906.pdf",
     "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
@@ -19,12 +21,12 @@
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
     "main.06c7804c.css.map": "/static/css/main.06c7804c.css.map",
-    "main.f4891c2d.js.map": "/static/js/main.f4891c2d.js.map",
+    "main.a33f9d03.js.map": "/static/js/main.a33f9d03.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06c7804c.css",
-    "static/js/main.f4891c2d.js"
+    "static/js/main.a33f9d03.js"
   ]
 }
