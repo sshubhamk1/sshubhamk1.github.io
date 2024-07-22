@@ -8,6 +8,8 @@ import tuxbuild from "../../Assets/Projects/tuxbuild.png";
 import custom_iso from "../../Assets/Projects/custom_iso.png";
 import iot_malware from "../../Assets/Projects/iot_malware.png";
 import anwes from "../../Assets/Projects/anwes.png";
+import ncm from "../../Assets/Projects/ncmproject.png";
+import scaleai from "../../Assets/Projects/scaleai.png";
 
 function Projects() {
   return (
@@ -21,6 +23,25 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={scaleai}
+              isBlog={false}
+              isRestricted={true}
+              title="Fine Tuning of AI models"
+              description="This project involves a chatbot for virtual assistance created using large language models. The models are fine-tuned for highly optimized results using the RLHF (Reinforcement Learning with Human Feedback) technique. They are tested with a series of related questions, and the output is evaluated using SxS ratings with additional feedback to improve the models' performance."
+              orgLink="https://scale.com"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ncm}
+              isBlog={false}
+              isRestricted={true}
+              title="Automatic trading platform"
+              description="An automated trading platform captures stock price tickers for a selected list of companies based on multiple parameters and algorithms. The engine predicts future market conditions for these companies and places trades to maximize profit."
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={procmon}

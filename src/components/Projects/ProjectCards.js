@@ -13,36 +13,36 @@ function ProjectCards(props) {
         <TiWarning /> &nbsp; Restricted
       </Button>
     );
-    if (props.orgLink)
-      button.push(
-        <Button
-          variant="success"
-          href={props.orgLink}
-          target="_blank"
-          style={{ marginLeft: "10px" }}
-        >
-          <CgOrganisation /> &nbsp; Visit Org
-        </Button>
-      );
   } else {
     button.push(
       <Button variant="primary" href={props.ghLink} target="_blank">
         <BsGithub /> &nbsp; Github
       </Button>
     );
-    if (props.demoLink) {
-      button.push(
-        <Button
-          variant="primary"
-          href={props.demoLink}
-          target="_blank"
-          style={{ marginLeft: "10px" }}
-        >
-          <CgWebsite /> &nbsp;
-          {"Demo"}
-        </Button>
-      );
-    }
+  }
+  if (props.orgLink)
+    button.push(
+      <Button
+        variant="success"
+        href={props.orgLink}
+        target="_blank"
+        style={{ marginLeft: "10px" }}
+      >
+        <CgOrganisation /> &nbsp; Visit Org
+      </Button>
+    );
+  if (props.demoLink) {
+    button.push(
+      <Button
+        variant="primary"
+        href={props.demoLink}
+        target="_blank"
+        style={{ marginLeft: "10px" }}
+      >
+        <CgWebsite /> &nbsp;
+        {"Demo"}
+      </Button>
+    );
   }
   return (
     <Card className="project-card-view">
