@@ -7,6 +7,7 @@ import sysmon from "../../Assets/Projects/sysmon.jpg";
 import tuxbuild from "../../Assets/Projects/tuxbuild.png";
 import custom_iso from "../../Assets/Projects/custom_iso.png";
 import iot_malware from "../../Assets/Projects/iot_malware.png";
+import anwes from "../../Assets/Projects/anwes.png";
 
 function Projects() {
   return (
@@ -72,7 +73,18 @@ function Projects() {
               title="Mitigation of Mirai Malware"
               description="This research proposes a Behaviour-dependent Resource-based Network-level Mitigation (BRNM) approach for Mirai malware and its variants. This hybrid method monitors IoT behavior through resources like CPU and memory utilization and running processes. It is based on the idea that malware attacks on IoT devices either kill genuine processes, create new processes, reuse existing ones, or attach malicious processes to genuine ones. The approach uses a bot application to monitor IoT device behavior, sending data to a backconnect server where processing occurs, and then updates the authorized user for corrective actions. The BRNM model is implemented in a Docker environment and tested for eight different IoT behaviors before and after malware infection."
               ghLink="https://github.com/sshubhamk1/Mirai-Solution"
-              orgLink="https://www.radisys.com"
+              orgLink="https://www.nitk.ac.in/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={anwes}
+              isBlog={false}
+              isRestricted={true}
+              title="Anwes"
+              description="Anwes is an end-to-end platform designed to streamline the entire interview experience for candidates. It operates as an invite-based website. Once a company selects a candidate from an external platform (such as Internshala, LinkedIn, or Indeed) for hiring, the hiring manager provides the candidate with an Anwes website profile. The candidate fills in all necessary details, and from then on, all interviews, communications, discussions, and notifications are managed via the Anwes platform. This ensures that the company has all required candidate information in a single, centralized source."
+              // ghLink="https://github.com/sshubhamk1/Mirai-Solution"
+              orgLink="https://think201.com/"
             />
           </Col>
           {/* <Col md={4} className="project-card">
