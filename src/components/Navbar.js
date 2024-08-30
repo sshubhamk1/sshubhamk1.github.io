@@ -60,7 +60,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
+                to="/?page=about"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
@@ -70,7 +70,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/skill"
+                to="/?page=skill"
                 onClick={() => updateExpanded(false)}
               >
                 <FaRegSnowflake style={{ marginBottom: "2px" }} /> Skills
@@ -80,7 +80,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/experience"
+                to="/?page=experience"
                 onClick={() => updateExpanded(false)}
               >
                 <FaIndustry style={{ marginBottom: "2px" }} /> Experience
@@ -90,7 +90,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/education"
+                to="?page=education"
                 onClick={() => updateExpanded(false)}
               >
                 <FaGraduationCap style={{ marginBottom: "2px" }} /> Education
@@ -100,7 +100,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/?page=project"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -113,7 +113,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/?page=resume"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
