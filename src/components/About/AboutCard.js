@@ -11,7 +11,8 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Shubham Kumar </span>
             from <span className="purple"> Sitmarhi, Bihar, India.</span>
             <br />
-            I am currently employed as a software engineer at Scale AI.
+            I am currently employed as a senior backend engineer at Collective
+            Artists Network(Under25).
             <br />
             I have completed M.Tech (Research) in Computer Science &amp;
             Engineering - Information Security at NITK Surathkal.

@@ -10,6 +10,7 @@ import iot_malware from "../../Assets/Projects/iot_malware.png";
 import anwes from "../../Assets/Projects/anwes.png";
 import ncm from "../../Assets/Projects/ncmproject.png";
 import scaleai from "../../Assets/Projects/scaleai.png";
+import u25 from "../../Assets/Projects/u25.png";
 
 function Projects() {
   return (
@@ -23,6 +24,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={u25}
+              isBlog={false}
+              isRestricted={true}
+              title="Under25 - Where students earn anb build"
+              description="It began in 2013 by building a community of driven students, that would come together once a year. This community began to grow across the nation, both physically and digitally. Over the years, the power of our student collective has impacted brands, non-profits, governments, consumer behavior and popular culture."
+              orgLink="https://under25universe.com"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={scaleai}

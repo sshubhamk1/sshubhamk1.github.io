@@ -22,7 +22,33 @@ function Experience() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  rgb(160, 32, 240)" }}
-            date="03/2024 - Present"
+            date="09/2024 - Present"
+            iconStyle={{ background: "rgb(160, 32, 240)", color: "#fff" }}
+            icon={<FaIndustry />}
+          >
+            <CompanyCard
+              name="Collective Artists Network"
+              desg="Senior Backend Engineer"
+              location="7th Floor Lexington Tower Tavarekere, Bangalore, India"
+              skillset={[
+                "Django Rest Framework",
+                "Wagtail",
+                "Pytorch",
+                "Pandas",
+                "Postgres",
+                "Redis",
+              ]}
+              description={[
+                "Implemented Card Recommendation System using Deep learning",
+                "Created RBAC system for proper security of data among different roles",
+              ]}
+            />
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(160, 32, 240)" }}
+            date="03/2024 - 08/2024"
             iconStyle={{ background: "rgb(160, 32, 240)", color: "#fff" }}
             icon={<FaIndustry />}
           >
