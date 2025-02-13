@@ -29,7 +29,7 @@ function Projects() {
               imgPath={u25}
               isBlog={false}
               isRestricted={true}
-              title="Under25 - Where students earn anb build"
+              title="Under25 - Where students earn and build"
               description="It began in 2013 by building a community of driven students, that would come together once a year. This community began to grow across the nation, both physically and digitally. Over the years, the power of our student collective has impacted brands, non-profits, governments, consumer behavior and popular culture."
               orgLink="https://under25universe.com"
             />
