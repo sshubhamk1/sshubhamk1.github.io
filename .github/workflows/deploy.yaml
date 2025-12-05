@@ -1,22 +1,22 @@
-name: Deploy to Repo2
+name: Build & Deploy to Master
 
 on:
   push:
     branches:
-      - master
+      - deploy
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout shubhPortfolio
+    - name: Checkout deploy branch
       uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
+    - name: Set up Node
+      uses: actions/setup-node@v4
       with:
-        node-version: '20'  # Use the Node.js version your project requiresss
+        node-version: 20
 
     - name: Install dependencies
       run: npm install
@@ -24,31 +24,27 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Checkout sshubhamk1.github.io
-      uses: actions/checkout@v4
-      with:
-        repository: "sshubhamk1/sshubhamk1.github.io"
-        token: ${{ secrets.GH_TOKEN }}
-        ref: master
-        path: repo2
-
-    - name: Removing all files from sshubhamk1.github.io
+    - name: Prepare master branch
       run: |
-        cd repo2
-        git rm -r *
+        # Save build folder
+        mkdir ../build-output
+        cp -r build/* ../build-output/
 
-    - name: Copy build files to repo2
-      run: cp -r build/* repo2/
+        # Switch to master
+        git fetch origin
+        git checkout master
 
-    - name: Commit and push changes to repo2
+        # Remove old files but keep .git
+        find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} \;
+
+    - name: Copy new build to master
       run: |
-        cd repo2
-        git config --global user.email "actions@github.com"
-        git config --global user.name "GitHub Actions"
-        if [ -n "$(git status --porcelain)" ]; then
-          git add .
-          git commit -m "Deploy from repo1"
-          git push origin master
-        else
-          echo "No changes to commit"
-        fi
+        cp -r ../build-output/* .
+
+    - name: Commit and push to master
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add .
+        git commit -m "Auto deploy from deploy branch" || echo "No changes to commit"
+        git push origin master
