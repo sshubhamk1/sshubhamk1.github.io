@@ -29,7 +29,7 @@ jobs:
         # Save build folder
         mkdir ../build-output
         cp -r build/* ../build-output/
-        cp -r .github ../build-output/
+        cp -r .github ../build-output/.github
 
         # Switch to master
         git fetch origin
@@ -40,7 +40,7 @@ jobs:
 
     - name: Copy new build to master
       run: |
-        cp -r ../build-output/* .
+        cp -r ../build-output/. .
 
     - name: Commit and push to master
       run: |
