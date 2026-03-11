@@ -1,0 +1,67 @@
+name: Build the Resume and put it on main repo
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    name: Build React App & Push to Target Repo
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Checkout source repository ──────────────────────────────────────
+      - name: Checkout Source Repo
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      # ── 2. Setup Node.js ────────────────────────────────────────────────────
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # ── 3. Install dependencies ─────────────────────────────────────────────
+      - name: Install Dependencies
+        run: npm ci
+
+      # ── 4. Build React project ──────────────────────────────────────────────
+      - name: Build React App
+        run: npm run build
+        env:
+          CI: false  # Prevents treating warnings as errors; remove if you want strict mode
+
+      # ── 5. Clone the target repository ─────────────────────────────────────
+      - name: Clone Target Repository
+        run: |
+          git clone https://x-access-token:${{ secrets.TARGET_REPO_TOKEN }}@github.com/${{ secrets.TARGET_REPO_OWNER }}/${{ secrets.TARGET_REPO_NAME }}.git target-repo
+
+      # ── 6. Copy build output to target repo ────────────────────────────────
+      - name: Copy Build Output to Target Repo
+        run: |
+          # Clear existing contents (except .git folder)
+          find target-repo -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+
+          # Copy build output (adjust 'build' to 'dist' if using Vite)
+          cp -r build/. target-repo/
+
+      # ── 7. Commit and push to target repo's master branch ──────────────────
+      - name: Commit & Push to Target Repo
+        run: |
+          cd target-repo
+
+          git config user.name "Shubham Kumar"
+          git config user.email "sshubhamk1@hotmail.com"
+
+          git add -A
+
+          # Only commit if there are actual changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit. Skipping push."
+          else
+            git commit -m "Updated portfolio"
+            git push origin master
+          fi
