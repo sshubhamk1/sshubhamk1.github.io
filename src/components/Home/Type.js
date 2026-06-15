@@ -8,7 +8,6 @@ function Type() {
         strings: [
           "Senior Software Engineer",
           "Django Developer",
-          "Deep Learning",
           "MERN Stack Developer",
           "Freelancer",
         ],
