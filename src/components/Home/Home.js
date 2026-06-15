@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import homeLogo from "../../Assets/home-main.svg";
+import pdf from "../../Assets/Shubham_Kumar_Resume.pdf";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -27,6 +30,23 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
+              </div>
+
+              <div className="hero-cta">
+                <Button
+                  as={Link}
+                  to="/?page=project"
+                  className="btn-hero-primary"
+                >
+                  View Projects
+                </Button>
+                <a
+                  href={pdf}
+                  download="Shubham_Kumar_Resume.pdf"
+                  className="btn btn-hero-secondary"
+                >
+                  Download Resume
+                </a>
               </div>
             </Col>
 
