@@ -11,6 +11,9 @@ import anwes from "../../Assets/Projects/anwes.png";
 import ncm from "../../Assets/Projects/ncmproject.png";
 import scaleai from "../../Assets/Projects/scaleai.png";
 import u25 from "../../Assets/Projects/u25.png";
+import yogic from "../../Assets/Projects/yogic.png";
+import tinystep from "../../Assets/Projects/tinystep.png";
+import shap3d from "../../Assets/Projects/shap3d.png";
 
 function Projects() {
   return (
@@ -35,6 +38,36 @@ function Projects() {
             />
           </Col>
           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={yogic}
+              isBlog={true}
+              isRestricted={true}
+              title="Yogic Algorithm"
+              description="theyogicalgorithm.in is the official web presence for The Yogic Algorithm, a holistic wellness and therapeutic center based in Ludhiana, Punjab, India. It is spearheaded by Shivani Goyal, a recognized yoga player, researcher, and certified yoga and acupressure therapist."
+              orgLink="https://theyogicalgorithm.in/"
+            />
+          </Col>
+<Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tinystep}
+              isBlog={true}
+              isRestricted={true}
+              title="Tiny Step Pediatrics"
+              description="⁠Tiny Steps Pediatrics is an online platform and pediatric consultancy focused on the healthy growth and development of infants and toddlers. It provides expert guidance, compassionate parental support, and counseling to help families navigate the early years of parenthood."
+              orgLink="https://tinystepspediatrics.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={shap3d}
+              isBlog={true}
+              isRestricted={true}
+              title="Shap3d"
+              description="⁠Shap3d.in is an online custom 3D printing service. It allows users to upload 3D model files (such as .STL or .OBJ), choose their preferred materials, finishes, and delivery options, and receive an instant quote for custom manufacturing"
+              orgLink="https://shap3d.in/"
+            />
+          </Col>
+<Col md={4} className="project-card">
             <ProjectCard
               imgPath={scaleai}
               isBlog={false}
