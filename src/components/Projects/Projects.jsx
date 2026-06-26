@@ -2,18 +2,18 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import procmon from "../../Assets/Projects/procmon.jpg";
-import sysmon from "../../Assets/Projects/sysmon.jpg";
-import tuxbuild from "../../Assets/Projects/tuxbuild.png";
-import custom_iso from "../../Assets/Projects/custom_iso.png";
-import iot_malware from "../../Assets/Projects/iot_malware.png";
-import anwes from "../../Assets/Projects/anwes.png";
-import ncm from "../../Assets/Projects/ncmproject.png";
-import scaleai from "../../Assets/Projects/scaleai.png";
-import u25 from "../../Assets/Projects/u25.png";
-import yogic from "../../Assets/Projects/yogic.png";
-import tinystep from "../../Assets/Projects/tinystep.png";
-import shap3d from "../../Assets/Projects/shap3d.png";
+import procmon from "../../assets/Projects/procmon.jpg";
+import sysmon from "../../assets/Projects/sysmon.jpg";
+import tuxbuild from "../../assets/Projects/tuxbuild.png";
+import custom_iso from "../../assets/Projects/custom_iso.png";
+import iot_malware from "../../assets/Projects/iot_malware.png";
+import anwes from "../../assets/Projects/anwes.png";
+import ncm from "../../assets/Projects/ncmproject.png";
+import scaleai from "../../assets/Projects/scaleai.png";
+import u25 from "../../assets/Projects/u25.png";
+import yogic from "../../assets/Projects/yogic.png";
+import tinystep from "../../assets/Projects/tinystep.png";
+import shap3d from "../../assets/Projects/shap3d.png";
 
 function Projects() {
   return (
