@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c60a8104.css",
-    "main.js": "/static/js/main.ba5ddf8f.js",
+    "main.js": "/static/js/main.a1f611bf.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/tuxbuild.png": "/static/media/tuxbuild.972adfab28f292cc0bdc.png",
     "static/media/procmon.jpg": "/static/media/procmon.82c9b14c86a80cd12203.jpg",
@@ -15,7 +15,7 @@
     "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/anwes.png": "/static/media/anwes.d0487b54e583deab8615.png",
-    "static/media/Shubham_Kumar_Resume.pdf": "/static/media/Shubham_Kumar_Resume.3dbd1e8987e3c29029d8.pdf",
+    "static/media/Shubham_Kumar_Resume.pdf": "/static/media/Shubham_Kumar_Resume.3ab75ddedfbec7dcfebf.pdf",
     "static/media/tinystep.png": "/static/media/tinystep.deed285a252e50ec8071.png",
     "static/media/shap3d.png": "/static/media/shap3d.74406909da18245e9800.png",
     "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
@@ -24,11 +24,11 @@
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
     "main.c60a8104.css.map": "/static/css/main.c60a8104.css.map",
-    "main.ba5ddf8f.js.map": "/static/js/main.ba5ddf8f.js.map",
+    "main.a1f611bf.js.map": "/static/js/main.a1f611bf.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c60a8104.css",
-    "static/js/main.ba5ddf8f.js"
+    "static/js/main.a1f611bf.js"
   ]
 }
